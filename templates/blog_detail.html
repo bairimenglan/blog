@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load markdown_deux_tags %}
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+    <title>{{ blog.title }}</title>
+</head>
+<body>
+<h2 style="font-family: Monaco;color: dodgerblue;font-size: 24pt;">{{ blog.title }}</h2>
+<h5 style="font-family:  'Courier New';">白日梦蓝                {{ blog.pub_time }}   {{ blog.pub_date }}</h5>
+<hr style="color: cadetblue;">
+<p style="font-family:  Monaco;font-size: 16pt">
+    {{ blog.body|markdown }}
+</p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1{
+    font-family: Monaco;
+    color: dodgerblue;
+    background-color: darkgray;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+body{
+    background-color: darkgray;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    font-family: Monaco;
+}
+
+/*ul{list-style-type: none;}*/
+/*li{display: inline;}*/
+/*a{display: block;width: 60px;}*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>白日梦蓝</title>
+
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+</head>
+<body>
+
+
+{#<h1 style="position: fixed;top: 5px;font-family: Monaco">白日梦蓝1992</h1>#}
+
+<ul>
+    <li>
+        <a href="/" style="display: block;width: 60px;">首页</a>
+    </li>
+    <li>
+        <a href="/" style="display: block;width: 60px;">文章</a>
+    </li>
+    <li>
+        <a href="/" style="display: block;width: 60px;">影像</a>
+    </li>
+    <li>
+        <a href="/" style="display: block;width: 60px;">关于</a>
+    </li>
+</ul>
+
+
+
+
+
+{% for blog in blogs %}
+
+    <p style="font-family: Monaco;font-size: 16pt;">
+    <a href="/blog/{{ blog.slug }}">{{ blog.title }}</a>
+    </p>
+    <p style="font-family: 'Times New Roman';font-size: 10pt;">
+        {{ blog.pub_date }}
+    </p>
+{% endfor %}
+
+
+</body>
+</html>
